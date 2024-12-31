@@ -1,0 +1,107 @@
+<!-- <html lang="en"> -->
+
+
+<!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+<!-- <script src="script.js"></script> -->
+
+<html dir="rtl">
+
+<head>
+    <title>האתר של אליה</title>
+</head>
+
+<body style="text-align: center;">
+    <div class="container">
+        <div class="header">
+            <input id="rocky" type="text" placeholder="תכתוב כאן כל מה שאתה רוצה...">
+            <button id="go">לחץ עלי!</button>
+        </div>
+        <div class="titles">
+            <h1 class="coteret">האתר של אליה</h1>
+
+        </div>
+
+
+        <div class="data">
+
+            <table>
+                <thead>
+                    <td>תאריך</td>
+                    <td>שם</td>
+                    <td>טלפון</td>
+                    <td>לינקים</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/12/2024</td>
+                        <td>חיים</td>
+                        <td>0548855625</td>
+                        <td><a href="https://chatgpt.com/">ChatGPT</a></td>
+                    </tr>
+                    <tr>
+                        <td>02/12/2024</td>
+                        <td>ששון</td>
+                        <td>05298985654</td>
+                        <td><a href="https://he.wikipedia.org/">Wikipedia</a></td>
+                    </tr>
+                    <tr>
+                        <td>03/12/2024</td>
+                        <td>ברוך</td>
+                        <td>05854585485</td>
+                        <td><a href="https://translate.google.co.il/?sl=iw&tl=en&op=translate">Google Translate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       <p id="rights">כל הזכויות שמורות לאליה שרעבי©</p>
+
+    </div>
+    <script>
+        document.querySelector('#go').addEventListener('click', () => {
+            const eliya = document.querySelector('#rocky').value
+            window.open('https://www.youtube.com/results?search_query=' + eliya, '_blank')
+        })
+    </script>
+
+    <style>
+        input,
+        button {
+            width: 200px;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #dfdfdf;
+        }
+
+        .container {
+            display: grid;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(109, 136, 160);
+        }
+
+        h4{
+            margin-bottom: 50px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .data{
+            display: flex;
+            justify-content: center;
+
+        }
+        #rights{
+            margin-top: 170px;
+        }
+
+    </style>
+</body>
+
+</html>
